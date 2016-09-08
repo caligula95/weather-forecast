@@ -115,19 +115,19 @@ public class DataMarshalingRepositoryImpl implements DataMarshalingRepository {
 		int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
 		switch (dayOfWeek) {
 		case 1:
-			return "Воскресенье";
+			return "Р’РѕСЃРєСЂРµСЃРµРЅСЊРµ";
 		case 2:
-			return "Понедельник";
+			return "РџРѕРЅРµРґРµР»СЊРЅРёРє";
 		case 3:
-			return "Вторник";
+			return "Р’С‚РѕСЂРЅРёРє";
 		case 4:
-			return "Среда";
+			return "РЎСЂРµРґР°";
 		case 5:
-			return "Четверг";
+			return "Р§РµС‚РІРµСЂРі";
 		case 6:
-			return "Пятница";
+			return "РџСЏС‚РЅРёС†Р°";
 		case 7:
-			return "Субота";
+			return "РЎСѓР±РѕС‚Р°";
 		default:
 			return "Some problem with data";
 		}
