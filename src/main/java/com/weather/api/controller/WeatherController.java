@@ -29,7 +29,7 @@ import com.weather.api.service.DataMarshalingService;
 @Controller
 public class WeatherController {
 
-	String url = "http://api.worldweatheronline.com/premium/v1/weather.ashx?key=1b57730d4ed44753b94192330161408&showlocaltime=yes&num_of_days=7&includelocation=yes&mca=no&tp=3&lang=ru&q=";
+	String url = "http://api.worldweatheronline.com/premium/v1/weather.ashx?key=b7c658ebe93e42459e6185022161610&showlocaltime=yes&num_of_days=7&includelocation=yes&mca=no&tp=3&lang=ru&q=";
 	
 	@Autowired
 	DataMarshalingService data;
