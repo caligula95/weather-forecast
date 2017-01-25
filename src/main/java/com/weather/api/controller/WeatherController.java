@@ -45,20 +45,17 @@ public class WeatherController {
 	
 	@RequestMapping(value = "/")
 	public String getIndex(Model model) {
-			try {
-			Thread.sleep(200);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		String sendGet = data.sendGet("http://api.worldweatheronline.com/premium/v1/weather.ashx?key=0086a961f9d14110afb171023161912&showlocaltime=yes&num_of_days=7&includelocation=yes&mca=no&tp=3&lang=ru&q=Kiev");
-			try {
-			Thread.sleep(200);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		Data dat = data.unmarshalData(sendGet);
+		String sendGet = null;
+		String url = buildUrl("Kiev");
+		if (url != null)
+			sendGet = data.sendGet(url);
+		else
+			throw new PageErrorException();
+		Data dat = null;
+		if (sendGet != null)
+			dat = data.unmarshalData(sendGet);
+		else
+			throw new PageErrorException();
 		CurrentCondition currentCondition = dat.getCurrentCondition();
 		NearestArea nearestArea = dat.getNearestArea();
 		List<Weather> weather = dat.getWeather();
