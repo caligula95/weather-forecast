@@ -9,8 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Simple Error Page a Flat Responsive Widget Template ::
-	w3layouts</title>
+<title>Error</title>
 <link rel="stylesheet" href="/resources/css/style2.css">
 <link
 	href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,200italic,200,300,300italic,400italic,600,600italic,700,700italic,900,900italic'
@@ -28,9 +27,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
 	<div class="main w3l">
-		<h2>Oй</h2>
+		<h2></h2>
 		<h1>Ошибка 404</h1>
-		<h3>Похоже Ваш город не найден. Воспользуйтесь поиском погоды по айпи (такая ссылка снизу главной страницы)</h3>
+		<h3>Сервис временно недоступен. Попробуйте позже</h3>
 		<p>
 		<a href='<spring:url value="/"></spring:url>' class="back">Назад</a></p>
 		<div class="social-icons w3">
